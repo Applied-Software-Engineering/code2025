@@ -1,0 +1,6 @@
+[submodule "python-sample-vscode-flask-tutorial"]
+	path = python-sample-vscode-flask-tutorial
+	url = https://github.com/microsoft/python-sample-vscode-flask-tutorial
+[submodule "flask-example"]
+	path = flask-example
+	url = https://github.com/stealthness/flask-example.git
