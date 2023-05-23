@@ -4,3 +4,6 @@
 [submodule "flask-example"]
 	path = flask-example
 	url = https://github.com/stealthness/flask-example.git
+[submodule "The-Flask-Tutorial-Code"]
+	path = The-Flask-Tutorial-Code
+	url = https://github.com/Birkbeck/The-Flask-Tutorial-Code.git

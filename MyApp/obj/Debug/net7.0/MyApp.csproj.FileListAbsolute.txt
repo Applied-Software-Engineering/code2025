@@ -1,0 +1,15 @@
+/Users/keith/Documents/Courses/ase/code2023/MyApp/bin/Debug/net7.0/MyApp
+/Users/keith/Documents/Courses/ase/code2023/MyApp/bin/Debug/net7.0/MyApp.deps.json
+/Users/keith/Documents/Courses/ase/code2023/MyApp/bin/Debug/net7.0/MyApp.runtimeconfig.json
+/Users/keith/Documents/Courses/ase/code2023/MyApp/bin/Debug/net7.0/MyApp.dll
+/Users/keith/Documents/Courses/ase/code2023/MyApp/bin/Debug/net7.0/MyApp.pdb
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.csproj.AssemblyReference.cache
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.AssemblyInfoInputs.cache
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.AssemblyInfo.cs
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.csproj.CoreCompileInputs.cache
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.dll
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/refint/MyApp.dll
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.pdb
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/MyApp.genruntimeconfig.cache
+/Users/keith/Documents/Courses/ase/code2023/MyApp/obj/Debug/net7.0/ref/MyApp.dll
