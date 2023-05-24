@@ -1,0 +1,1 @@
+create table if not exists users(name text not null, location text,club text);

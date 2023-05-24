@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>This flask example will create a football supporter site</p>
+    <p>Test link to  <a href="/warn">error page</a></p>
+    <p>Below is are links to three random registered users</p>
+    {% for user in users %}
+        <p>Test link to  <a href="/user/{{user}}">{{user.title()}}'s page</a></p>
+    {% endfor %}
+    <p>To see all users <a href="/all_users">link</a></p>
+    <p>Test link to  <a href="/user/kate">Kate's page</a> (redirect to the error page)</p>
+    <p>A new user <a href="/new_user">link</a> </p>
+{% endblock %}
