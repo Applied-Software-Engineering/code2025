@@ -7,3 +7,6 @@
 [submodule "The-Flask-Tutorial-Code"]
 	path = The-Flask-Tutorial-Code
 	url = https://github.com/Birkbeck/The-Flask-Tutorial-Code.git
+[submodule "topic-05/sqla_tutorial"]
+	path = topic-05/sqla_tutorial
+	url = https://github.com/zzzeek/sqla_tutorial
