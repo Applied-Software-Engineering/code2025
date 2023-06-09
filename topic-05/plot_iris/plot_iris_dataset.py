@@ -30,8 +30,8 @@ from sklearn.decomposition import PCA
 
 # import some data to play with
 iris = datasets.load_iris()
-X = iris.data[:, :2]  # we only take the first two features.
-y = iris.target
+X = iris.data[:, :2]  # we only take the first two features. # type: ignore
+y = iris.target  # type: ignore
 
 x_min, x_max = X[:, 0].min() - 0.5, X[:, 0].max() + 0.5
 y_min, y_max = X[:, 1].min() - 0.5, X[:, 1].max() + 0.5
@@ -40,7 +40,7 @@ plt.figure(2, figsize=(8, 6))
 plt.clf()
 
 # Plot the training points
-plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Set1, edgecolor="k")
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Set1, edgecolor="k")  # type: ignore
 plt.xlabel("Sepal length")
 plt.ylabel("Sepal width")
 
@@ -54,7 +54,7 @@ plt.yticks(())
 fig = plt.figure(1, figsize=(8, 6))
 ax = fig.add_subplot(111, projection="3d", elev=-150, azim=110)
 
-X_reduced = PCA(n_components=3).fit_transform(iris.data)
+X_reduced = PCA(n_components=3).fit_transform(iris.data)  # type: ignore
 ax.scatter(
     X_reduced[:, 0],
     X_reduced[:, 1],
