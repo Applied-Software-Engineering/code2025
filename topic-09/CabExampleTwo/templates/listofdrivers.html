@@ -1,0 +1,44 @@
+{% extends "layout3.html" %}
+{% block body %}
+
+    <div class="jumbotron">
+        <header>
+
+            <h1 style="color:grey;">Registered Drivers</h1>
+
+        </header>
+
+        <br> <br> <br>
+        <form action="" class="form-inline" method="post">
+            <label for="FullName"><b>Enter the information for a driver </b></label>
+            <input type="text" class="form-control" placeholder="Enter the information for a driver"
+                   value="{{ request.form.x }}" name="x">
+
+            <button type="submit" class="btn btn-success"><span
+                    class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Search
+            </button>
+        </form>
+
+        <table class="table table-bordered table-striped table-hover">
+            <tr class="active">
+                <th> Full Name</th>
+                <th>Address</th>
+                <th>Mobile Number</th>
+                <th>UserName</th>
+                <th>Taxi Number</th>
+            </tr>
+            {% for driver in drivers %}
+                <tr>
+                    <td class="active"><a
+                            href="{{ url_for(".details",username = driver.username) }}"> {{ driver.full_name }}</a></td>
+
+                    <td class="active">{{ driver.address }}</td>
+                    <td class="active">{{ driver.mobile_number }}</td>
+                    <td class="active">{{ driver.username }}</td>
+
+                    <td class="active">{{ driver.taxi_number }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
