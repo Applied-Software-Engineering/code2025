@@ -1,0 +1,41 @@
+{% extends "layout3.html" %}
+{% block body %}
+
+    <div class="jumbotron">
+        <header>
+
+            <h1 style="color:grey;" align="center"><b> Drivers which are currently online. </b></h1>
+
+            <a href="{{ url_for('onlinedriversmap') }}">
+                <button type="button" class="btn btn-default btn-md"> View Drivers In Map</button>
+            </a>
+        </header>
+
+        <br> <br> <br>
+        <table class="table table-bordered table-hover">
+            <tr class="active">
+                <th>Full Name</th>
+                <th>Mobile Number</th>
+                <th>License Number</th>
+                <th>Taxi Number</th>
+
+            </tr>
+            {% for driver in drivers %}
+                <tr>
+                    <td class="active">
+                        {{ driver.full_name }}
+                    </td>
+                    <td class="active">
+                        {{ driver.mobile_number }}
+                    </td>
+                    <td class="active">
+                        {{ driver.license_number }}
+                    </td>
+                    <td class="active">
+                        {{ driver.taxi_number }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

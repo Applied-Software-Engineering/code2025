@@ -1,0 +1,68 @@
+{% extends "layout3.html" %}
+{% block body %}
+    <style>
+        body {
+            background-image: url("{{ url_for('static',filename= 'images/3.jpg') }}");
+        }
+    </style>
+    <header>
+        <h2 style="color:blue;"><b>Register a Driver</b></h2>
+    </header>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">close</button>
+                <label for="message" style="color:red;"><b> {{ message }}</b></label><br>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <br>
+
+    <form action="" class="form-inline" method="post">
+        <label for="Enter the FullName" style="color:green;"><b>Full Name</b></label>
+        <br>
+        <input type="text" class="form-control" placeholder="Full Name" value="{{ request.form.full_name }}"
+               name="full_name" required="required">
+        <br><br>
+
+        <label for="Licence Number" style="color:green;"><b>Licence Number</b></label>
+        <br>
+        <input type="text" class="form-control" placeholder="Enter the license number"
+               value="{{ request.form.license_number }}" name="license_number" required="required">
+        <br><br>
+
+        <label for="Address" style="color:green;"><b>Address</b></label>
+        <br>
+        <input type="text" class="form-control" placeholder="Enter the address" value="{{ request.form.address }}"
+               name="address" required="required">
+        <br><br>
+
+        <label for="Mobile Number" style="color:green;"><b> Mobile Number</b></label>
+        <br>
+        <input type="text" class="form-control" placeholder="Enter the mobile number"
+               value="{{ request.form.mobile_number }}" name="mobile_number" required="required">
+        <br><br>
+
+        <label for="Username" style="color:green;" style="color:green;"><b>Username</b></label>
+        <br>
+        <input type="text" class="form-control" placeholder="Enter the username" value="{{ request.form.username }}"
+               name="username" required="required">
+        <br><br>
+
+        <label for="Password" style="color:green;"><b>Password</b></label><br>
+        <input type="text" class="form-control" placeholder="Enter the password" value="{{ request.form.password }}"
+               name="password" required="required">
+        <br><br>
+
+        <label for="Taxi Number" style="color:green;"><b>Taxi Number </b></label>
+        <input type="text" class="form-control" placeholder="Enter the taxi number"
+               value="{{ request.form.taxi_number }}" name="taxi_number" required="required">
+        <br/><br/>
+
+        <button type="submit" class="btn btn-success">
+            <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"> Submit</span>
+        </button>
+    </form>
+
+{% endblock %}

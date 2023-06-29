@@ -1,0 +1,33 @@
+<form action="/map" method="POST">
+    <div>
+        <label for="location">Location:</label>
+        <input id="location" name="location" required type="text"><br><br>
+    </div>
+
+    <div>
+        <label for="latitude">Latitude:</label>
+        <input id="latitude" name="latitude" required type="text"><br><br>
+    </div>
+
+    <div>
+        <label for="longitude">Longitude:</label>
+        <input id="longitude" name="longitude" required type="text"><br><br>
+    </div>
+
+    <div>
+        <label for="no_items">Number of items:</label>
+        <input id="no_items" name="no_items" required type="text"><br><br>
+    </div>
+
+    <div>
+        <select id="bank_type", name="bank_type">
+          {% for option in recycle_types %}
+            <option value="{{ option }}">{{ option }}</option>
+          {% endfor %}
+        </select>
+    </div>
+
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>

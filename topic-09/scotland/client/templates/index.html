@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Find My Recycling Center</title>
+</head>
+<body>
+    <header>
+        <h1>Find my...</h1>
+    </header>
+    <hr>
+    <h2>Enter Location</h2>
+    {% include 'form.html' %}
+    <hr>
+    {% include 'footer.html' %}
+</body>
+</html>
